@@ -1,0 +1,62 @@
+.comments {
+    padding: 100px 0;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+
+    .container {
+        max-width: 600px;
+    }
+
+    &-item {
+        width: 50%;
+        padding: 20px 20px 29px;
+        background: transparent;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        margin: 0 auto 30px;
+
+        @include media-to(768px) {
+            width: 100%;
+        }
+    }
+
+    &-user-pic {
+        margin-bottom: 10px;
+    }
+
+    &-user-name {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .splide__arrow {
+        background: transparent;
+        border: 1px solid #fff;
+    }
+
+    .splide__arrow--prev {
+        left: -3em;
+
+        @include media-to(768px) {
+            top: auto;
+            transform: none;
+            bottom: -1em;
+            left: calc(50% - 50px);
+        }
+    }
+
+    .splide__arrow--next {
+        right: -3em;
+
+        @include media-to(768px) {
+            top: auto;
+            transform: none;
+            bottom: -1em;
+            right: calc(50% - 50px);
+        }
+    }
+
+    .splide__arrow svg {
+        fill: #fff;
+    }
+}

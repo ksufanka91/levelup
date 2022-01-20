@@ -1,0 +1,61 @@
+@import "mixins.scss";
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/@splidejs/splide/dist/css/splide.min";
+@import "components/promo";
+@import "components/composition";
+@import "components/comments";
+@import "components/product";
+@import "components/order";
+
+body {
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+
+    * {
+        box-sizing: inherit;
+    }
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.4444rem;
+    background-color: #22BEFF;
+    border-radius: 10px;    
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #07ACF1;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}

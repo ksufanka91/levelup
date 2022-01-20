@@ -1,0 +1,33 @@
+{
+  "name": "level_up",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Azovceva",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-include": "^2.4.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svgo": "^2.2.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.12.1",
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^3.6.10",
+    "normalize.css": "^8.0.1"
+  },
+  "description": ""
+}

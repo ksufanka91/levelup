@@ -1,0 +1,160 @@
+.order {
+    padding: 100px 0;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+
+    @include media-to(768px) {
+       padding: 50px 0;
+    }
+
+    &-title {
+        text-align: center;
+        margin-bottom: 80px;
+
+        @include media-to(768px) {
+            margin-bottom: 40px;
+         }
+    }
+
+    &-countdown {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    &-photo {
+        margin-bottom: 30px;
+    }
+
+    &-image {
+        @include media-to(768px) {
+            width: 200px;
+            height: auto;
+         }
+    }
+
+    &-price {
+        &-prev {
+            position: relative;
+            margin-bottom: 15px;
+            font-size: 2rem;
+
+            &:after {
+                content: url("../images/order-line2.svg");
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        &-current {
+            font-size: 4rem;
+            background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+            background-position: 0;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 4s infinite linear;
+            animation-fill-mode: forwards;
+            -webkit-text-size-adjust: none;
+
+            @keyframes shine {
+                0% {
+                    background-position: 0;
+                }
+
+                100% {
+                    background-position: 141px;
+                }
+            }
+        }
+
+        &-rub {
+            font-size: 0.7em;
+        }
+    }
+
+    &-columns {
+        display: flex;
+        align-items: center;
+
+        @include media-to(768px) {
+            flex-direction: column;
+        }
+    }
+
+    &-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+        @include media-to(768px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        max-width: 100%;
+
+        &-input {
+            width: 100%;
+            padding: 20px 40px;
+            border-radius: 10px;
+            background: transparent;
+            border: 1px solid white;
+            margin-bottom: 20px;
+            color: white;
+            outline: none;
+
+            &-container {
+                position: relative;
+            }
+
+            &:last-child {
+                margin-bottom: 50px;
+            }
+
+            &::placeholder {
+                color: #fff;
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            &[type="number"] {
+                -moz-appearance: textfield;
+            }
+
+            &-tooltip {
+                position: absolute;
+                top: 5px;
+                right: 6px;
+                opacity: 0.6;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                border-radius: 50%;
+                border: 1px solid white;
+                background-color: transparent;
+                cursor: default;
+
+                &:hover {
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        .button {
+            align-self: center;
+             
+            @include media-to(425px) {
+                align-self: auto;
+            }
+        }
+    }
+}
